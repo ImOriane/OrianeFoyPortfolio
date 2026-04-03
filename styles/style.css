@@ -983,16 +983,20 @@ nav ul li a:hover {
     animation: fade 2s  forwards;
 
 }
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
 
 .avatar img {
     width: 60%;
-    left:600px;
-    -webkit-animation:fade 2s forwards;
+    -webkit-animation: fade 2s forwards;
     -moz-animation: fade 2s forwards;
     -o-animation: fade 2s forwards;
-    animation: fade 2s  forwards;
+    animation: fade 2s forwards;
 }
-
 
 .bouton {
     text-align: center;
@@ -1146,7 +1150,19 @@ form {
     box-sizing: border-box;
     outline:0;
 }
+.link-art {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: antiquewhite;
+    text-decoration: none;
+    transition: 0.2s;
+}
 
+.link-art:hover {
+    color: var(--couleur_principale);
+    text-decoration: underline;
+}
 
 
 /***********************************************************************************/
