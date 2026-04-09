@@ -58,14 +58,16 @@
     <div class="projetpres">
         <h2>MaxJeune est un abonnement de la SNCF destiné aux jeunes voyageurs, permettant de bénéficier de billets à 0 euro sur certains trajets en train.<br><br>
             Dans le cadre de ce projet, je développe une application qui vise à simplifier la recherche d'itinéraires associés à cet abonnement.<br><br>
-            L'objectif final est de créer un calculateur d'itinéraires permettant à l'utilisateur de saisir une gare de départ, une gare d'arrivée et une date, afin d'obtenir les trajets disponibles de manière simple et rapide.<br><br>
+            J’ai mis en place un calculateur d’itinéraires reposant sur un algorithme de recherche en largeur (BFS). Celui-ci explore les destinations accessibles depuis la gare de départ, puis depuis chaque gare intermédiaire, afin de trouver un trajet vers la gare d'arrivée, y compris avec correspondances.<br><br>
+            Pour le moment, cet algorithme ne prend pas encore en compte les horaires, ce qui constitue la prochaine étape du projet afin d’affiner les résultats proposés à l’utilisateur.<br><br>
             Le projet repose sur une architecture web complète avec un backend développé en Python à l'aide de FastAPI, permettant de construire une API REST. Cette API est connectée à l'API ouverte de la SNCF, qui fournit les disponibilités des trains éligibles à l'abonnement Max Jeune.<br><br>
-            L'ensemble est ensuite relié à une interface web en HTML, Tailwind et JavaScript afin d'offrir une interaction fluide et en temps réel avec l'utilisateur.</h2>
-
+            L'ensemble est ensuite relié à une interface web en HTML, Tailwind et JavaScript afin d'offrir une interaction fluide et en temps réel avec l'utilisateur.
+        </h2>
     </div>
     <img src="../documents/fleche.png" alt="fleche" class="fleche">
     <div class="galerie">
         <img src="../documents/Creme/creme1.gif" alt="ct">
+        <img src="../documents/Creme/creme2.gif" alt="ct">
 
     </div>
 </div>
